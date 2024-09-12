@@ -28,9 +28,26 @@ SSE(Server-Sent Event)聊天服务
 go run main.go
 ```
 
--   启动客户端(非流式), 需要一直等待全部完成:
+### 启动客户端（流式）
 
-让 ai 写一首诗
+立即响应
+
+```
+curl -s -N -X POST localhost:8080/chat-stream --data '
+{
+    "msg":"Please write a poem about your kingdom"
+}' | jq  --unbuffered
+```
+
+---
+
+
+
+
+### 启动客户端(非流式)
+
+
+让 ai 写一首诗(需要耐心等待)
 
 ```
 curl -s -N -X POST localhost:8080/chat --data '
@@ -51,14 +68,3 @@ curl -s -N -X POST localhost:8080/chat --data '
     "finish": true
 }
 ```
-
--   启动客户端（流式）, 立即响应
-
-```
-curl -s -N -X POST localhost:8080/chat-stream --data '
-{
-    "msg":"Please write a poem about your kingdom"
-}' | jq  --unbuffered
-```
-
----

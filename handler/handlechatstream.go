@@ -83,7 +83,7 @@ func HandleChatStream(w http.ResponseWriter, r *http.Request) {
 	defer stream.Close()
 
 	// 置响应头
-    w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "text/event-stream; charset=utf-8")
 	w.Header().Set("Cache-Control", "no-cache")
 	w.Header().Set("Connection", "keep-alive")
