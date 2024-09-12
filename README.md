@@ -16,7 +16,7 @@
 -   启动服务：
 
 ```
-go run server/main.go
+go run main.go
 ```
 
 -   启动客户端(非流式), 需要一直等待全部完成:
