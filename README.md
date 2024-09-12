@@ -1,5 +1,14 @@
 # aichat
 
+SSE(Server-Sent Event)聊天服务
+
+> Server-Sent Events（SSE）是一种用于实现服务器向客户端实时推送数据的 Web 技术。与传统的轮询和长轮询相比，SSE 提供了更高效和实时的数据推送机制。
+> SSE 基于 HTTP 协议，允许服务器将数据以事件流（Event Stream）的形式发送给客户端。客户端通过建立持久的 HTTP 连接，并监听事件流，可以实时接收服务器推送的数据。
+> SSE 的主要特点
+>
+> -   简单易用：SSE 使用基于文本的数据格式，如纯文本、JSON 等，使得数据的发送和解析都相对简单。
+> -   **单向通信**：SSE 支持服务器向客户端的单向通信，服务器可以主动推送数据给客户端，而客户端只能接收数据。
+
 使用 deepseek 作为 AI 聊天大模型， deepseek 性价比非常高
 
 -   DeepSeek API 文档: https://platform.deepseek.com/api-docs/zh-cn/
@@ -51,3 +60,5 @@ curl -s -N -X POST localhost:8080/chat-stream --data '
     "msg":"Please write a poem about your kingdom"
 }' | jq  --unbuffered
 ```
+
+---
