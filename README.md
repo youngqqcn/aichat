@@ -1,4 +1,9 @@
-# AICHAT
+# aichat
+
+使用 deepseek 作为 AI 聊天大模型， deepseek 性价比非常高
+
+-   DeepSeek API 文档: https://platform.deepseek.com/api-docs/zh-cn/
+-   DeepSeek 开发者平台： https://platform.deepseek.com/
 
 ## 数据流
 
