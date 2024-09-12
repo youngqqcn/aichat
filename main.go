@@ -11,7 +11,8 @@ import (
 )
 
 func main() {
-    // 如果.env不存在则创建
+
+	// 如果.env不存在则创建
 	_, err := os.Stat(".env")
 	if err != nil {
 		if os.IsNotExist(err) {
@@ -25,6 +26,7 @@ func main() {
 
 	err = godotenv.Load(".env")
 	if err != nil {
+
 		log.Fatal("缺少 .env 文件")
 	}
 

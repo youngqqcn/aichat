@@ -76,6 +76,7 @@ func HandleChatStream(w http.ResponseWriter, r *http.Request) {
 			},
 		},
 	)
+
 	if err != nil {
 		fmt.Printf("ChatCompletion error: %v\n", err)
 		return
